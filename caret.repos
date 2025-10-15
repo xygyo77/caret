@@ -2,44 +2,44 @@ repositories:
   ros2/rcl:
     type: git
     url: https://github.com/ros2/rcl.git
-    version: humble
+    version: 6d52f2b54980140476222b420467e7fbd8575dd9
   ros2/rclcpp:
     type: git
     url: https://github.com/tier4/rclcpp.git
-    version: humble_tracepoint_added
+    version: t4-main-caret
   ros-tracing/ros2_tracing:
     type: git
-    url: https://github.com/tier4/ros2_tracing.git
+    url: git@github.com:xygyo77/ros2_tracing.git
     version: humble_tracepoint_added
   CARET/caret_trace:
     type: git
-    url: https://github.com/tier4/caret_trace.git
-    version: main
+    url: git@github.com:xygyo77/caret_trace.git
+    version: pr-agnocast-caret_trac
   CARET/caret_analyze:
     type: git
-    url: https://github.com/tier4/caret_analyze.git
-    version: main
+    url: git@github.com:xygyo77/caret_analyze.git
+    version: pr-agnocast-caret_analyze
   CARET/caret_analyze_cpp_impl:
     type: git
     url: https://github.com/tier4/caret_analyze_cpp_impl.git
     version: main
   CARET/ros2caret:
     type: git
-    url: https://github.com/tier4/ros2caret.git
-    version: main
-  # Dependency for CI/CD
+    url: git@github.com:xygyo77/ros2caret.git
+    version: pr-agnocast-ros2caret
   CARET/caret_common:
     type: git
     url: https://github.com/tier4/caret_common.git
     version: main
-
-  ### Optional packages. Apply CARET for widely used pre-built packages ###
-  ### Delete or change version depending on a target application ###
   eclipse-cyclonedds/cyclonedds:
     type: git
     url: https://github.com/eclipse-cyclonedds/cyclonedds.git
-    version: releases/0.10.x
+    version: 76360fb73907ce3dba397e89090a7a4ecf4f1246
   ros-tooling/topic_tools:
     type: git
     url: https://github.com/ros-tooling/topic_tools.git
-    version: 1.1.1
+    version: 5cdfce6cbf4279d4f23969ae0c798b088089dec0
+  vendor/glog:  # TODO: to use isGoogleInitialized() API in v0.6.0. Remove when the rosdep glog version is updated to v0.6.0 (already updated in Ubuntu 24.04)
+    type: git
+    url: https://github.com/tier4/glog.git
+    version: v0.6.0_t4-ros
