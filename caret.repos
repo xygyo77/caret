@@ -14,7 +14,7 @@ repositories:
   CARET/caret_trace:
     type: git
     url: git@github.com:xygyo77/caret_trace.git
-    version: pr-agnocast-caret_trac
+    version: pr-agnocast-caret_trace
   CARET/caret_analyze:
     type: git
     url: git@github.com:xygyo77/caret_analyze.git
