@@ -13,20 +13,20 @@ repositories:
     version: humble_tracepoint_added
   CARET/caret_trace:
     type: git
-    url: git@github.com:xygyo77/caret_trace.git
-    version: pr-agnocast-caret_trace
+    url: https://github.com/tier4/caret_trace.git
+    version: e9bd7c12daae096a8976d68a0e1ab42c16a84c3b
   CARET/caret_analyze:
     type: git
     url: git@github.com:xygyo77/caret_analyze.git
-    version: pr-agnocast-caret_analyze
+    version: pr-agnocast-with-577
   CARET/caret_analyze_cpp_impl:
     type: git
     url: https://github.com/tier4/caret_analyze_cpp_impl.git
     version: main
   CARET/ros2caret:
     type: git
-    url: git@github.com:xygyo77/ros2caret.git
-    version: pr-agnocast-ros2caret
+    url: https://github.com/tier4/ros2caret.git
+    version: 2cd1e985a3d2bd71042a0eb3bc6798e662fc609e
   CARET/caret_common:
     type: git
     url: https://github.com/tier4/caret_common.git
@@ -43,3 +43,4 @@ repositories:
     type: git
     url: https://github.com/tier4/glog.git
     version: v0.6.0_t4-ros
+
