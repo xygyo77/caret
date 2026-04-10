@@ -14,7 +14,7 @@ repositories:
   CARET/caret_trace:
     type: git
     url: https://github.com/tier4/caret_trace.git
-    version: main
+    version: use_dds_write_ts
   CARET/caret_analyze:
     type: git
     url: https://github.com/tier4/caret_analyze.git
@@ -35,10 +35,6 @@ repositories:
 
   ### Optional packages. Apply CARET for widely used pre-built packages ###
   ### Delete or change version depending on a target application ###
-  eclipse-cyclonedds/cyclonedds:
-    type: git
-    url: https://github.com/eclipse-cyclonedds/cyclonedds.git
-    version: releases/0.10.x
   ros-tooling/topic_tools:
     type: git
     url: https://github.com/ros-tooling/topic_tools.git
