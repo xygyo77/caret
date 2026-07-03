@@ -31,10 +31,6 @@ repositories:
     type: git
     url: https://github.com/tier4/caret_common.git
     version: CARET_TAG
-  eclipse-cyclonedds/cyclonedds:
-    type: git
-    url: https://github.com/eclipse-cyclonedds/cyclonedds.git
-    version: CYCLONEDDS_HASH
   ros-tooling/topic_tools:
     type: git
     url: https://github.com/ros-tooling/topic_tools.git

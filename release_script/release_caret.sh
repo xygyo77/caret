@@ -155,7 +155,6 @@ for TEMPLATE in "${SCRIPT_DIR}"/template_caret_*.repos; do
         ["ros2/rcl"]="RCL_HASH"
         ["ros2/rclcpp"]="RCLCPP_HASH"
         ["ros-tracing/ros2_tracing"]="ROS_TRACING_HASH"
-        ["eclipse-cyclonedds/cyclonedds"]="CYCLONEDDS_HASH"
         ["ros-tooling/topic_tools"]="TOPIC_TOOLS_HASH"
     )
 
