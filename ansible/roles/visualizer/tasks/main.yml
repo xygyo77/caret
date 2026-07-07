@@ -6,6 +6,21 @@
     update_cache: true
   become: true
 
+- name: Find bokeh directories
+  find:
+    paths: "{{ ansible_env.HOME }}/.local/lib"
+    patterns: "*bokeh*"
+    file_type: directory
+    recurse: true
+  register: bokeh_dirs
+
+- name: Remove found bokeh directories
+  file:
+    path: "{{ item.path }}"
+    state: absent
+  loop: "{{ bokeh_dirs.files }}"
+  become: false
+
 - name: Install caret dependent packages
   pip:
     requirements: "{{ requirements_path }}"
