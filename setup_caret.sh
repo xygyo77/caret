@@ -83,7 +83,7 @@ export PATH="$HOME/.local/bin:$PATH"
 validate_ros_distro "$ros_distro"
 
 # Check PIP_BREAK_SYSTEM_PACKAGES for jazzy and later (PEP 668)
-if [[ "${ros_distro,,}" == "jazzy" || "${ros_distro,,}" > "jazzy" ]]; then
+if [[ ${ros_distro,,} == "jazzy" || ${ros_distro,,} > "jazzy" ]]; then
     env_val="${!PIP_BREAK_ENV:-0}"
     if [ "$env_val" != "1" ]; then
         echo -e "\e[31m[ERROR] ROS 2 ${ros_distro^} (Ubuntu 24.04+) detected.\e[0m"
