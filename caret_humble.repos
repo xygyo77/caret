@@ -5,32 +5,32 @@ repositories:
     version: humble
   ros2/rclcpp:
     type: git
-    url: https://github.com/tier4/rclcpp.git
+    url: https://github.com/xygyo77/rclcpp.git
     version: humble_tracepoint_added
   ros-tracing/ros2_tracing:
     type: git
-    url: https://github.com/tier4/ros2_tracing.git
+    url: https://github.com/xygyo77/ros2_tracing.git
     version: humble_tracepoint_added
   CARET/caret_trace:
     type: git
-    url: https://github.com/tier4/caret_trace.git
+    url: https://github.com/xygyo77/caret_trace.git
     version: main
   CARET/caret_analyze:
     type: git
-    url: https://github.com/tier4/caret_analyze.git
+    url: https://github.com/xygyo77/caret_analyze.git
     version: main
   CARET/caret_analyze_cpp_impl:
     type: git
-    url: https://github.com/tier4/caret_analyze_cpp_impl.git
+    url: https://github.com/xygyo77/caret_analyze_cpp_impl.git
     version: main
   CARET/ros2caret:
     type: git
-    url: https://github.com/tier4/ros2caret.git
+    url: https://github.com/xygyo77/ros2caret.git
     version: main
   # Dependency for CI/CD
   CARET/caret_common:
     type: git
-    url: https://github.com/tier4/caret_common.git
+    url: https://github.com/xygyo77/caret_common.git
     version: main
 
   ### Optional packages. Apply CARET for widely used pre-built packages ###

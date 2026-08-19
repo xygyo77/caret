@@ -7,7 +7,7 @@ body:
       label: Checklist
       description: Confirm the following items before proceeding.
       options:
-        - label: I've read the [contribution guidelines](https://github.com/tier4/caret/blob/main/.github/CONTRIBUTING.md).
+        - label: I've read the [contribution guidelines](https://github.com/xygyo77/caret/blob/main/.github/CONTRIBUTING.md).
           required: true
         - label: I've read [document](https://tier4.github.io/CARET_doc/main/) and no solution were found.
           required: true

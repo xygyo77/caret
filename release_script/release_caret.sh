@@ -108,7 +108,7 @@ function add_tag_to_caret_repository() {
     ${DRY_RUN} git checkout main
     ${DRY_RUN} git checkout -b rc/"${2}"
     ${DRY_RUN} git tag "${2}"
-    ${DRY_RUN} git remote add github git@github.com:tier4/"${1}".git
+    ${DRY_RUN} git remote add github git@github.com:xygyo77/"${1}".git
     if [ "${PUSH_REMOTE}" == "true" ]; then
         ${DRY_RUN} git push github rc/"${2}"
         ${DRY_RUN} git push github "${2}"
