@@ -1,21 +1,21 @@
 repositories:
   CARET/caret_trace:
     type: git
-    url: https://github.com/tier4/caret_trace.git
+    url: https://github.com/xygyo77/caret_trace.git
     version: CARET_TAG
   CARET/caret_analyze:
     type: git
-    url: https://github.com/tier4/caret_analyze.git
+    url: https://github.com/xygyo77/caret_analyze.git
     version: CARET_TAG
   CARET/caret_analyze_cpp_impl:
     type: git
-    url: https://github.com/tier4/caret_analyze_cpp_impl.git
+    url: https://github.com/xygyo77/caret_analyze_cpp_impl.git
     version: CARET_TAG
   CARET/ros2caret:
     type: git
-    url: https://github.com/tier4/ros2caret.git
+    url: https://github.com/xygyo77/ros2caret.git
     version: CARET_TAG
   CARET/caret_common:
     type: git
-    url: https://github.com/tier4/caret_common.git
+    url: https://github.com/xygyo77/caret_common.git
     version: CARET_TAG

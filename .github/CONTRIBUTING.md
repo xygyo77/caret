@@ -12,11 +12,11 @@ To get an overview of the project, read the [CARET document](https://tier4.githu
 
 When you create a new issue, [search FAQ in the document for known issues/solutions](https://tier4.github.io/CARET_doc/main/faq/faq).
 
-CARET consists of multi repositories and <https://github.com/tier4/caret> is a meta repository. A new issue should be created in the meta repository, unless the issue is explicitly related to a certain repository.
+CARET consists of multi repositories and <https://github.com/xygyo77/caret> is a meta repository. A new issue should be created in the meta repository, unless the issue is explicitly related to a certain repository.
 
 ### Solve an issue
 
-Scan through our [existing issues](https://github.com/tier4/caret/issues) to find one that interests you. You can narrow down the search using `labels` as filters. If you find an issue to work on, you are welcome to open a PR with a fix.
+Scan through our [existing issues](https://github.com/xygyo77/caret/issues) to find one that interests you. You can narrow down the search using `labels` as filters. If you find an issue to work on, you are welcome to open a PR with a fix.
 
 ## Pull Request
 
