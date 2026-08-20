@@ -23,11 +23,9 @@ RUN git clone https://github.com/xygyo77/caret.git /ros2_caret_ws && \
     git checkout ${CARET_VERSION}
 
 # cspell: disable
-RUN if [ "$ROS_DISTRO" = "jazzy" ]; then \
-      apt-get update && \
-      apt-get install -y python3-pip python3-virtualenv && \
-      virtualenv -p python3 --system-site-packages $HOME/venv/jazzy ; \
-    fi
+RUN apt-get update && \
+    apt-get install -y python3-pip python3-virtualenv && \
+    virtualenv -p python3 --system-site-packages $HOME/venv/jazzy
 # cspell: enable
 
 # cspell: disable
@@ -38,28 +36,18 @@ RUN apt update && apt install -y git && \
 # cspell: enable
 
 RUN echo "===== Setup CARET ====="
-COPY caret*.repos ros2_caret_ws/
+COPY caret.repos ros2_caret_ws/
 RUN cd ros2_caret_ws && \
     mkdir src && \
-    if [ "$ROS_DISTRO" = "humble" ]; then \
-        REPOS_FILE=caret_humble.repos ; \
-    elif [ "$ROS_DISTRO" = "jazzy" ]; then \
-        REPOS_FILE=caret.repos ; \
-        export PIP_BREAK_SYSTEM_PACKAGES=1 ; \
-    else \
-        echo "Unsupported ROS_DISTRO: $ROS_DISTRO" && exit 1 ; \
-    fi && \
+    REPOS_FILE=caret.repos && \
+    export PIP_BREAK_SYSTEM_PACKAGES=1 && \
     vcs import src < $REPOS_FILE && \
     . /opt/ros/"$ROS_DISTRO"/setup.sh && \
-    if [ "$ROS_DISTRO" = "jazzy" ]; then \
-        . $HOME/venv/jazzy/bin/activate ; \
-    fi && \
+    . $HOME/venv/jazzy/bin/activate && \
     ./setup_caret.sh -c -d "$ROS_DISTRO"
 
 RUN echo "===== Build CARET ====="
 RUN cd ros2_caret_ws && \
     . /opt/ros/"$ROS_DISTRO"/setup.sh && \
-    if [ "$ROS_DISTRO" = "jazzy" ]; then \
-      . $HOME/venv/jazzy/bin/activate ; \
-    fi && \
+    . $HOME/venv/jazzy/bin/activate && \
     colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_C_FLAGS="-std=c99"
